@@ -14,21 +14,21 @@ public class Facture {
     private Long id;
     private String reference;
     private Date dateTransaction;
-    private String adresse;
     private Date dateDeValidité;
-
     @Column(precision = 11, scale = 4)
     private BigDecimal totalpaimentespece;
     @Column(precision = 11, scale = 4)
     private BigDecimal  totalpaiementcheque;
+    @ManyToOne
+    private Fournisseur fournisseur;
     @ManyToOne
     private Societe societe;
     @OneToMany(mappedBy = "facture",fetch = FetchType.LAZY)
     private List<OperationComptable> operationComptables =new ArrayList<OperationComptable>();
     @OneToMany(mappedBy = "facture",fetch = FetchType.LAZY)
     private List<FactureItem> factureItems = new ArrayList<FactureItem>();
-   @ManyToOne
-    private FacturePaiement facturePaiement;
+    @OneToMany(mappedBy = "facture",fetch = FetchType.LAZY)
+    private List<FacturePaiement> facturePaiements = new ArrayList<FacturePaiement>();
 
 
 }

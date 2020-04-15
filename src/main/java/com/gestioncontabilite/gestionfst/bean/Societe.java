@@ -14,6 +14,7 @@ public class Societe {
     private Long id;
     private String ice;
     private String raisonSocial;
+    private String adenomination;
     private String adresse;
     @OneToMany(mappedBy = "societe")
     private  List<CompteBanquaire> compteBanquaire=new ArrayList<CompteBanquaire>();

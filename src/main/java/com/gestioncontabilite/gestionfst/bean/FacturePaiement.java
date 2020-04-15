@@ -14,6 +14,7 @@ public class FacturePaiement {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private Date datedepaiement;
     @ManyToOne
     private Facture facture;
     @ManyToOne
@@ -22,8 +23,6 @@ public class FacturePaiement {
     private CompteBanquaire compteBanquaire;
     @ManyToOne
     private Caisse caisse;
-
-    private Date datedepaiement;
     @Column(precision = 11, scale = 4)
     private BigDecimal montant;
 
