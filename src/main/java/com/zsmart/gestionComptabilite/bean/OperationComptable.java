@@ -1,4 +1,4 @@
-package com.gestioncontabilite.gestionfst.bean;
+package com.zsmart.gestionComptabilite.bean;
 
 import javax.persistence.*;
 
@@ -6,6 +6,7 @@ import javax.persistence.*;
 public class OperationComptable {
 
     @Id
+
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 

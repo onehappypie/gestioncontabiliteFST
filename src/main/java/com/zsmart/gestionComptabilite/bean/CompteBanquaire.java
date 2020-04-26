@@ -1,6 +1,4 @@
-package com.gestioncontabilite.gestionfst.bean;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.zsmart.gestionComptabilite.bean;
 
 import javax.persistence.*;
 import java.util.ArrayList;

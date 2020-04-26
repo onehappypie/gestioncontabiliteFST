@@ -1,4 +1,4 @@
-package com.gestioncontabilite.gestionfst;
+package com.zsmart.gestionComptabilite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.gestioncontabilite.gestionfst.bean;
+package com.zsmart.gestionComptabilite.bean;
 
 import javax.persistence.*;
 import java.util.ArrayList;

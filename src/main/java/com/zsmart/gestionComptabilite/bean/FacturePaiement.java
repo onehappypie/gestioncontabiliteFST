@@ -1,12 +1,8 @@
-package com.gestioncontabilite.gestionfst.bean;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.zsmart.gestionComptabilite.bean;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 public class FacturePaiement {
