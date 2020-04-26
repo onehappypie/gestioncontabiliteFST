@@ -21,5 +21,59 @@ public class Societe {
     @OneToMany(mappedBy = "societe")
     private  List<Facture> factures=new ArrayList<Facture>();
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getIce() {
+        return ice;
+    }
+
+    public void setIce(String ice) {
+        this.ice = ice;
+    }
+
+    public String getRaisonSocial() {
+        return raisonSocial;
+    }
+
+    public void setRaisonSocial(String raisonSocial) {
+        this.raisonSocial = raisonSocial;
+    }
+
+    public String getAdenomination() {
+        return adenomination;
+    }
+
+    public void setAdenomination(String adenomination) {
+        this.adenomination = adenomination;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public List<CompteBanquaire> getCompteBanquaire() {
+        return compteBanquaire;
+    }
+
+    public void setCompteBanquaire(List<CompteBanquaire> compteBanquaire) {
+        this.compteBanquaire = compteBanquaire;
+    }
+
+    public List<Facture> getFactures() {
+        return factures;
+    }
+
+    public void setFactures(List<Facture> factures) {
+        this.factures = factures;
+    }
 }

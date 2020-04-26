@@ -16,4 +16,27 @@ public class CompteComptable {
     @ManyToOne
     private SousClassComptable sousClassComptable;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<OperationComptable> getOperationComptables() {
+        return operationComptables;
+    }
+
+    public void setOperationComptables(List<OperationComptable> operationComptables) {
+        this.operationComptables = operationComptables;
+    }
+
+    public SousClassComptable getSousClassComptable() {
+        return sousClassComptable;
+    }
+
+    public void setSousClassComptable(SousClassComptable sousClassComptable) {
+        this.sousClassComptable = sousClassComptable;
+    }
 }
